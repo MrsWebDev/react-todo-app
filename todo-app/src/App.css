@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.app {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 30px;
+  background: #fff;
+}
+
+.todo-list {
+  width: 50vw;
+  height: auto;
+  margin: auto;
+  padding: 30px;
+  background: #ebecf0;
+  text-align: center;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+  padding: 2%;
+  background: #228c22; /* forest green color */
+  font-size: 16px;
+  color: #fff; 
+}
+
+.title {
+  padding: 20px 0;
+  font-size: 45px;
+  font-style: bold;
+  text-align: center;
+  color: #228c22; 
+}
+
+input[type=text] {
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-bottom: 3px solid #228c22; 
+  border-left: none;
+  outline: none;
+
+  color: #808080;
+  font-size: 14px;
+  
+  -webkit-transition: border linear 0.5s; 
+     -moz-transition: border linear 0.5s;
+      -ms-transition: border linear 0.5s;
+       -o-transition: border linear 0.5s;
+          transition: border linear 0.5s;
+}
+
+input[type=text]:focus {
+  border-color: #808080;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  background-color: #ebecf0;
+  border: 2px solid #228c22;
+  outline: none;
+  font-size: 14px;
+  color: #000; 
+
+  /*
+  -webkit-transition: border linear 0.3s; 
+     -moz-transition: border linear 0.3s;
+      -ms-transition: border linear 0.3s;
+       -o-transition: border linear 0.3s;
+          transition: border linear 0.3s;*/
+}
+
+button:hover {
+  background-color: #d3d3d3;
+
+}
+
+button:active {
+  background-color: #228c22;
+  color: #ebecf0;
+  border: 2px solid #ebecf0;
+}
